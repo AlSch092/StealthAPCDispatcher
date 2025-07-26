@@ -123,7 +123,7 @@ private:
 			{
 				0x4C ^ xor_key, 0x8B ^ xor_key, 0xD1 ^ xor_key,                                  //mov r10, rcx
 				0xB8 ^ xor_key, 0x67 ^ xor_key, 0x01 ^ xor_key, 0x00 ^ xor_key, 0x00 ^ xor_key,  //mov eax, 167h
-				0xCD ^ xor_key, 0x2E ^ xor_key,                                                  //int 2e
+				0x0F ^ xor_key, 0x05 ^ xor_key,                                                  //syscall
 				0xC3 ^ xor_key                                                                   //ret
 			};
 
